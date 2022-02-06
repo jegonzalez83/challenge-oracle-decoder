@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html lang="es">
+	
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Código Enigma</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap"
+        rel="stylesheet">
+	  <link rel="stylesheet" href="estilo.css">
+	</head>
+	
+	<body>
+        <br> 
+	  <h1 class="titulo">Código Enigma</h1>
+      <br> <br> <br> <br> <br> <br>
+	
+	  <main class="main">
+	    <section class="form box">
+	      <form action="" onClick="evitarRecarga(event)" autocomplete="off">
+            <h3 id="encabezado1">Mensaje Original:</h3>
+	        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese su mensaje aqui">
+	        <input class="btn" type="submit" value="Encriptar" id="btn-encriptar" onclick="encriptarTexto()">
+	        <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar" onclick="desencriptarTexto()">
+	      </form>
+	    </section>
+	
+	    <section class="msg box">
+	      <h3 id="textoIngresado">Mensaje encriptado:</h3>
+	      <input class="text-input" type="text" id="msg"></input>
+	      <input class="btn" type="submit" value="Copiar Mensaje" id="btn-copy" onclick="copiarTexto()">
+	    </section>
+	  </main>
+	
+	  <script src="codigo.js">
+	  </script>
+	</body>
+	
+	</html>
